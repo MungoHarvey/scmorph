@@ -387,7 +387,7 @@ def read_cellprofiler_batches(
     counter = 0
     for f in tqdm(files):
         cur_X = read_X(f, meta_cols=meta_cols, n_headers=n_headers, sep=sep)
-        adata[counter : counter + cur_X.shape[0], :].X = cur_X
+        adata.X[counter : counter + cur_X.shape[0], :] = cur_X
         counter += cur_X.shape[0]
     return adata
 

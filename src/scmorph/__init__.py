@@ -5,7 +5,7 @@ from anndata._warnings import ImplicitModificationWarning
 from packaging.version import Version
 from scanpy import read_h5ad, write
 
-from scmorph import datasets, io, logging, pl, pp, qc, tl
+from scmorph import datasets, io, logging, pl, pp, qc
 from scmorph.io import read, read_cellprofiler_batches, read_cellprofiler_csv, read_sql
 
 # ignore common warnings after subsetting, #10
